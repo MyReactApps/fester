@@ -8,12 +8,12 @@ export default Component ({
     render(){
         return(
             <Tabs>
-                <Tab label="Item One" >
+                <Tab label="Create Items" >
                     <div>
                         <TabOne />
                     </div>
                 </Tab>
-                <Tab label="Item Two" >
+                <Tab label="View Items" >
                     <div>
                         <MainGrid />
                     </div>
