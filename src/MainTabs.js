@@ -8,14 +8,14 @@ export default Component ({
     render(){
         return(
             <Tabs>
-                <Tab label="Create Items" >
-                    <div>
-                        <TabOne />
-                    </div>
-                </Tab>
                 <Tab label="View Items" >
                     <div>
                         <MainGrid />
+                    </div>
+                </Tab>
+                <Tab label="Create Items" >
+                    <div>
+                        <TabOne />
                     </div>
                 </Tab>
             </Tabs>

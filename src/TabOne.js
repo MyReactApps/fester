@@ -14,17 +14,15 @@ export default Component({
         <div className="container">
             <TextField
             hintText="Be Original"
-            errorText="This field is required"
             floatingLabelText="Title"
             /><br />
             <TextField
             hintText="Insert Image Url"
-            errorText="This field is required"
+            //errorText="This field is required"
             floatingLabelText="Image"
             /><br />
             <TextField
             hintText="Full Name Please"
-            errorText="This field is required"
             floatingLabelText="Author"
             /><br />
             <SelectField
