@@ -6,9 +6,7 @@ import 'bootstrap-social/bootstrap-social.css'
 export default Component ({
     render(){
         return(
-            
             <span className="fa fa-google">oogle</span>
-           
         )
     }
 })

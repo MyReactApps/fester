@@ -12,7 +12,7 @@ export default Component( {
     return (
       <div>
         <AppBar
-          title="Title"
+          title="my Tester"
           iconElementLeft={
                 <IconMenu 
                     iconButtonElement={ <IconButton><MoreVertIcon /></IconButton> }
