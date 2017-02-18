@@ -5,6 +5,18 @@ const appState = State({
         userName: "",
         user: ''
     },
+      addToList({list}, text) {
+    return {
+      list:  [...list, {name: text}],
+      textInput: ''
+    }
+  },
+  setInputText({list}, text){
+    return {
+      list,
+      textInput: text
+    }
+  },
     setUser({user, ...rest}, newUser){
         return{
             ...rest,
