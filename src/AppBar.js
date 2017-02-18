@@ -1,12 +1,11 @@
+import React from 'react';
+import { Component, Actions} from 'jumpsuit';
 import AppBar  from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
-
-import React from 'react';
-import { Component } from 'jumpsuit';
 
 export default Component( {
   render() {
@@ -21,8 +20,10 @@ export default Component( {
                     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
                 >
                     <MenuItem primaryText="Home" />
-                    <MenuItem primaryText="Sign In" />
-                    <MenuItem primaryText="Sign out" />
+                    <a
+                    onClick={() => Actions.googleLogout()}>
+                    <MenuItem primaryText="Sign out"/>
+                    </a>
                 </IconMenu>
          }
         />

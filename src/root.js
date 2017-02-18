@@ -1,23 +1,18 @@
 import React from 'react';
-import { Render, State } from 'jumpsuit';
+import { Render } from 'jumpsuit';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import App from './App';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import Auth from './Auth';
+import { initializeFirebase } from './firebase'
+import { globalState } from './state'
 
 injectTapEventPlugin();
-const appState = State({
-  initial: {
-    test: 'test works'
-  }
-})
-const globalState = {
-  appState: appState
-}
+initializeFirebase();
 
 Render(
   globalState,
   <MuiThemeProvider muiTheme={getMuiTheme()}>
-     <App />
+    <Auth />
   </MuiThemeProvider>
 );
