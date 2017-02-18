@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
+import React from 'react';
+import { Component } from 'jumpsuit'
+import AppBar from './AppBar';
 
-class App extends Component {
+export default Component( {
   render() {
     return (
       <div>
-          <h2>Welcome to React</h2>
-          <RaisedButton label="Default"/>
+          <AppBar />
       </div>
     );
   }
-}
+})
 
-export default App;
+
